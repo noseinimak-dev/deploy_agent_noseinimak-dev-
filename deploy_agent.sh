@@ -8,3 +8,9 @@ cleanup() {
 }
 trap 'cleanup SIGINT' SIGINT
 trap 'cleanup SIGTSTP' SIGTSTP
+
+deploy_environment() {
+    read -p "Enter environment suffix: " suffix
+    ACTIVE_DIR="attendance_tracker_${suffix}"
+    mkdir -p "$ACTIVE_DIR/Helpers" "$ACTIVE_DIR/reports"
+}
