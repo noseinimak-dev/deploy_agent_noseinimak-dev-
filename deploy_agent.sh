@@ -33,3 +33,11 @@ archive_logs() {
     local stamp=$(date +"%Y%m%d_%H%M%S")
     cp "$ACTIVE_DIR/reports/attendance.log" "$ACTIVE_DIR/archives/attendance/attendance_${stamp}.log"
 }
+
+while true; do
+    echo "1) Deploy"
+    echo "2) Run"
+    echo "3) Archive"
+    echo "4) Exit"
+    break
+done
