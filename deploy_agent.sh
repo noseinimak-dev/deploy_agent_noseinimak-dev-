@@ -18,3 +18,9 @@ deploy_environment() {
 setup_roster() {
     cp templates/assets.csv "$ACTIVE_DIR/Helpers/assets.csv"
 }
+
+configure_security() {
+    cp templates/config.json "$ACTIVE_DIR/Helpers/config.json"
+    sed -i.bak "s/\"warning\": 75/\"warning\": 80/" "$ACTIVE_DIR/Helpers/config.json"
+    chmod 600 "$ACTIVE_DIR/Helpers/config.json"
+}
