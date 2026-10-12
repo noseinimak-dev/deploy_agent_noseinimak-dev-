@@ -28,3 +28,8 @@ configure_security() {
 run_checker() {
     python3 "$ACTIVE_DIR/attendance_checker.py"
 }
+
+archive_logs() {
+    local stamp=$(date +"%Y%m%d_%H%M%S")
+    cp "$ACTIVE_DIR/reports/attendance.log" "$ACTIVE_DIR/archives/attendance/attendance_${stamp}.log"
+}
