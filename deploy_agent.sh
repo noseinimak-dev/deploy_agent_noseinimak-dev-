@@ -14,3 +14,7 @@ deploy_environment() {
     ACTIVE_DIR="attendance_tracker_${suffix}"
     mkdir -p "$ACTIVE_DIR/Helpers" "$ACTIVE_DIR/reports"
 }
+
+setup_roster() {
+    cp templates/assets.csv "$ACTIVE_DIR/Helpers/assets.csv"
+}
