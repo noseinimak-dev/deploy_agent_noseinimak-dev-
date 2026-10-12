@@ -24,3 +24,7 @@ configure_security() {
     sed -i.bak "s/\"warning\": 75/\"warning\": 80/" "$ACTIVE_DIR/Helpers/config.json"
     chmod 600 "$ACTIVE_DIR/Helpers/config.json"
 }
+
+run_checker() {
+    python3 "$ACTIVE_DIR/attendance_checker.py"
+}
