@@ -11,6 +11,8 @@ Use the command: python3 attendance_checker.py (after navigating into your gener
 HOW TO TRIGGER THE ARCHIVE FEATURE
 While the script is running, press Ctrl+C or Ctrl+Z to invoke the emergency signal trap and compress partial states. Alternatively, you can use option 3 in the main menu to archive historical logs.
 
+THIS IS THE LINK TO MY VIDEO https://drive.google.com/file/d/1vFe1OHviYI4H8uKWi5Moibxh3XiMSsO5/view?usp=sharing
+
 HOW TO READ THE ARCHIVE
 The archive is a compressed binary file. Do not open it in a text editor, it will look like scrambled symbols. Use zip or tar instead. The commands you can use are:
 unzip attendance_tracker_{tag}_archive.zip   # extract zip archive
